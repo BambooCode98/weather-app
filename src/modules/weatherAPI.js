@@ -1,30 +1,24 @@
 'use strict';
 
-import { getCity } from './geoAPI';
+// import { getCityCoords } from './geoAPI';
 
-const data = getCity();
-console.log(data);
-let lat = data[0];
-let long = data[1];
-console.log(lat,long);
-let coordinates = '37.9,-89.33' //`${lat},${long}`;
-
-async function getWeatherData() {
+export async function getWeatherData(lat, long) {
 
 
-  const weather = await fetch(`https://api.weather.gov/points/${coordinates}`, {mode: 'cors'});
+  const weather = await fetch(`https://api.weather.gov/points/${lat},${long}`, {mode: 'cors'});
   const weatherData = await weather.json();
+  console.log(weatherData);
   const forecast = await fetch(weatherData.properties.forecast, {mode: 'cors'});
   const forecastData = await forecast.json();
-  const sevenDays = forecastData.properties.periods;
-  console.log(sevenDays);
-  return sevenDays;
+  const days = forecastData.properties.periods;
+  // console.log(days);
+  return days;
 }
 
 
-getWeatherData().catch( error => {
-  console.log(error);
-})
+// getWeatherData().catch( error => {
+//   console.log(error);
+// })
 
 
 
