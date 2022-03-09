@@ -2,5 +2,8 @@
 
 
 export function highlightThings(forecastDays) {
-  let tempHi = forecastDays.temperature;
+  let highTemp = [];
+  
+  
+
 }

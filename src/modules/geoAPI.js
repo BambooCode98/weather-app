@@ -11,7 +11,5 @@ export async function getCityCoords(location, state, country) {
   return [lat, long];
 }
 
-// getCity().catch( error => {
-//   console.log(error);
-// })
+
 

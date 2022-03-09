@@ -93,7 +93,6 @@ const dow5n = document.querySelector('.dow5n');
 const d5nicon = document.querySelector('#d5nicon');
 
 const degree = decodeURI('%C2%B0');
-console.log(degree);
 
 export function createForecastPage(forecastDays) {
   
