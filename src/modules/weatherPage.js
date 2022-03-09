@@ -2,6 +2,18 @@
 
 
 const temperature4All = document.querySelector('#temperature4All');
+const temperature4All1 = document.querySelector('#temperature4All1');
+const temperature4All2 = document.querySelector('#temperature4All2');
+const temperature4All3 = document.querySelector('#temperature4All3');
+const temperature4All4 = document.querySelector('#temperature4All4');
+const temperature4All5 = document.querySelector('#temperature4All5');
+const temperature4All6 = document.querySelector('#temperature4All6');
+const temperature4All7 = document.querySelector('#temperature4All7');
+const temperature4All8 = document.querySelector('#temperature4All8');
+const temperature4All9 = document.querySelector('#temperature4All9');
+const temperature4All10 = document.querySelector('#temperature4All10');
+const temperature4All11 = document.querySelector('#temperature4All11');
+
 
 const dow0 = document.querySelector('.dow0');
 const dow0text = document.querySelector('.dow0text');
@@ -82,7 +94,18 @@ const d5nicon = document.querySelector('#d5nicon');
 
 export function createForecastPage(forecastDays) {
   
-  temperature4All.textContent = "Temperature: "
+  temperature4All.textContent = "Temperature: ";
+  temperature4All1.textContent = "Temperature: ";
+  temperature4All2.textContent = "Temperature: ";
+  temperature4All3.textContent = "Temperature: ";
+  temperature4All4.textContent = "Temperature: ";
+  temperature4All5.textContent = "Temperature: ";
+  temperature4All6.textContent = "Temperature: ";
+  temperature4All7.textContent = "Temperature: ";
+  temperature4All8.textContent = "Temperature: ";
+  temperature4All9.textContent = "Temperature: ";
+  temperature4All10.textContent = "Temperature: ";
+  temperature4All11.textContent = "Temperature: ";
 
   dow0.textContent = forecastDays[0].name;
   dow0text.textContent = forecastDays[0].detailedForecast;
