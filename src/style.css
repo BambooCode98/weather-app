@@ -1,0 +1,30 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+  .main-page{
+    width: 30%;
+    height: 100vh;
+  }
+
+    #location{
+      width: 80%;
+
+    }
+
+    #state{
+      width: 80%;
+
+    }
+
+  .weather-page{
+    width: 70%;
+    height: 100vh;
+  }
