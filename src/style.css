@@ -1,17 +1,20 @@
-html{
+/* html{
   margin: 0;
   padding: 0;
-}
+} */
 
-body{
+.body{
   display: flex;
   margin: 0;
   padding: 0;
+  flex-basis: 1 -1 auto;
 }
 
   .main-page{
     width: 30%;
     height: 100vh;
+    padding-left: 1%;
+    border-right: solid
   }
 
     #location{
@@ -27,4 +30,45 @@ body{
   .weather-page{
     width: 70%;
     height: 100vh;
+    overflow-y: scroll;
   }
+
+    .flip-card{
+      width: 75%;
+      border: 2px red solid;
+      border-radius: 5px;
+      margin: 4%;
+      margin-bottom: 3%;
+      display: flex;
+      background-color: transparent;
+    }
+
+    .flip-card:after{
+      content: "";
+      display: block;
+      padding-bottom: 25%;
+    }
+
+    .content{
+      /* display: flex; */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      /* flex-direction: column; */
+    }
+
+    .front, .back{
+      width: 100%;
+      height: 100%;
+    }
+
+    .front{
+    }
+
+      .dow0temp{
+        width: 10%;
+      }
+
+    .back{
+
+    }

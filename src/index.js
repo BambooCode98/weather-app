@@ -7,7 +7,7 @@ import './style.css';
 
 import { getCityCoords } from './modules/geoAPI';
 import { getWeatherData } from './modules/weatherAPI';
-import { createDays } from './modules/weatherPage';
+import { createForecastPage } from './modules/weatherPage';
 
 let coordinates = [];
 let forecastDays = [];
@@ -40,7 +40,7 @@ form.addEventListener('submit', function(e) {
       [d0, d0n, d1, d1n, d2, d2n, d3, d3n, d4, d4n, d5, d5n] = days;
       forecastDays.push(d0, d0n, d1, d1n, d2, d2n, d3, d3n, d4, d4n, d5, d5n);
       console.log(forecastDays);
-      // createForecastPage(forecastDays);
+      createForecastPage(forecastDays);
       coordinates = [];
       forecastDays = [];
     })

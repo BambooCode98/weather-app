@@ -8,29 +8,240 @@
   </head>
 
   <body>
-    <div class="main-page">
-      <form id="formID" class="formMain" action="./dist/weather.html">
-        <p>City:</p>
-        <input id="location" type="text">
-        <br>
-        <p>State:</p>
-        <input id="state" type="text">
-        <br>
-        <!-- <p>Country:</p>
-        <input id="country" type="text" placeholder="United States">
-        <br> -->
-        <br>
-        <button class="submitForm">Get 5-Day Forecast</button>
-      </form>
-    </div>
+    <div class="body">
+      <div class="main-page">
+        <form id="formID" class="formMain" action="./dist/weather.html">
+          <p>City:</p>
+          <input id="location" type="text">
+          <br>
+          <p>State:</p>
+          <input id="state" type="text">
+          <br>
+          <!-- <p>Country:</p>
+          <input id="country" type="text" placeholder="United States">
+          <br> -->
+          <br>
+          <button class="submitForm">Get 5-Day Forecast</button>
+        </form>
+      </div>
 
-    <div class="weather-page">
-      <div>
-        
+      <div class="weather-page">
+
+        <div class="flip-card" id="day0">
+          <div class="content">
+            <div class="front">
+              <div class="left">
+                <p class="dow0"></p>
+                <img src="" id="d0icon">
+                <p class="dow0short"></p>
+                <p id="temperature4All"></p>
+                <p class="dow0temp"></p>
+              </div>
+              <div class="right">
+                <p class="dow0text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card" id="day0n">
+          <div class="content">  
+            <div class="back">
+              <div class="left">
+                <p class="dow0n"></p>
+                <img src="" id="d0nicon">
+                <p class="dow0nshort"></p>
+                <p id="temperature4All"></p>
+                <p class="dow0ntemp"></p>
+              </div>
+              <div class="right">
+                <p class="dow0ntext"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" id="day1">
+          <div class="content">
+            <div class="front">
+              <div class="left">
+                <p class="dow1"></p>
+                <img src="" id="d1icon">
+                <p class="dow1short"></p>
+                <p id="temperature4All"></p>
+                <p class="dow1temp"></p>
+              </div>
+              <div class="right">
+                <p class="dow1text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card" id="day1n">
+          <div class="content">  
+            <div class="back">
+              <div class="left">
+                <p class="dow1n"></p>
+                <img src="" id="d1nicon">
+                <p class="dow1nshort"></p>
+                <p id="temperature4All"></p>
+                <p class="dow1ntemp"></p>
+              </div>
+              <div class="right">
+                <p class="dow1ntext"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" id="day2">
+          <div class="content">
+            <div class="front">
+              <div class="left">
+                <p class="dow2"></p>
+                <img src="" id="d2icon">
+                <p class="dow2short"></p>
+                <p id="temperature4All"></p>
+                <p class="dow2temp"></p>
+              </div>
+              <div class="right">
+                <p class="dow2text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card" id="day2n">
+          <div class="content">  
+            <div class="back">
+              <div class="left">
+                <p class="dow2n"></p>
+                <img src="" id="d2nicon">
+                <p class="dow2nshort"></p>
+                <p id="temperature4All"></p>
+                <p class="dow2ntemp"></p>
+              </div>
+              <div class="right">
+                <p class="dow2ntext"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" id="day3">
+          <div class="content">
+            <div class="front">
+              <div class="left">
+                <p class="dow3"></p>
+                <img src="" id="d3icon">
+                <p class="dow3short"></p>
+                <p id="temperature4All"></p>
+                <p class="dow3temp"></p>
+              </div>
+              <div class="right">
+                <p class="dow3text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card" id="day3n">
+          <div class="content">  
+            <div class="back">
+              <div class="left">
+                <p class="dow3n"></p>
+                <img src="" id="d3nicon">
+                <p class="dow3nshort"></p>
+                <p id="temperature4All"></p>
+                <p class="dow3ntemp"></p>
+              </div>
+              <div class="right">
+                <p class="dow3ntext"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" id="day4">
+          <div class="content">
+            <div class="front">
+              <div class="left">
+                <p class="dow4"></p>
+                <img src="" id="d4icon">
+                <p class="dow4short"></p>
+                <p id="temperature4All"></p>
+                <p class="dow4temp"></p>
+              </div>
+              <div class="right">
+                <p class="dow4text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card" id="day4n">
+          <div class="content">  
+            <div class="back">
+              <div class="left">
+                <p class="dow4n"></p>
+                <img src="" id="d4nicon">
+                <p class="dow4nshort"></p>
+                <p id="temperature4All"></p>
+                <p class="dow4ntemp"></p>
+              </div>
+              <div class="right">
+                <p class="dow4ntext"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" id="day5">
+          <div class="content">
+            <div class="front">
+              <div class="left">
+                <p class="dow5"></p>
+                <img src="" id="d5icon">
+                <p class="dow5short"></p>
+                <p id="temperature4All"></p>
+                <p class="dow5temp"></p>
+              </div>
+              <div class="right">
+                <p class="dow5text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flip-card" id="day5n">
+          <div class="content">  
+            <div class="back">
+              <div class="left">
+                <p class="dow5n"></p>
+                <img src="" id="d5nicon">
+                <p class="dow5nshort"></p>
+                <p id="temperature4All"></p>
+                <p class="dow5ntemp"></p>
+              </div>
+              <div class="right">
+                <p class="dow5ntext"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
-
-
+  
 
     <script src="main.js"></script>
   </body>
