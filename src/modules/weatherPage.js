@@ -92,6 +92,9 @@ const dow5ntemp = document.querySelector('.dow5ntemp');
 const dow5n = document.querySelector('.dow5n');
 const d5nicon = document.querySelector('#d5nicon');
 
+const degree = decodeURI('%C2%B0');
+console.log(degree);
+
 export function createForecastPage(forecastDays) {
   
   temperature4All.textContent = "Temperature: ";
@@ -110,78 +113,78 @@ export function createForecastPage(forecastDays) {
   dow0.textContent = forecastDays[0].name;
   dow0text.textContent = forecastDays[0].detailedForecast;
   dow0short.textContent = forecastDays[0].shortForecast;
-  dow0temp.textContent = forecastDays[0].temperature;
+  dow0temp.textContent = forecastDays[0].temperature + `${degree}F`;
   d0icon.src = forecastDays[0].icon;
 
   dow0n.textContent = forecastDays[1].name;
   dow0ntext.textContent = forecastDays[1].detailedForecast;
   dow0nshort.textContent = forecastDays[1].shortForecast;
-  dow0ntemp.textContent = forecastDays[1].temperature;
+  dow0ntemp.textContent = forecastDays[1].temperature + `${degree}F`;
   d0nicon.src = forecastDays[1].icon;
 
   //1
   dow1.textContent = forecastDays[2].name;
   dow1text.textContent = forecastDays[2].detailedForecast;
   dow1short.textContent = forecastDays[2].shortForecast;
-  dow1temp.textContent = forecastDays[2].temperature;
+  dow1temp.textContent = forecastDays[2].temperature + `${degree}F`;
   d1icon.src = forecastDays[2].icon;
 
   dow1n.textContent = forecastDays[3].name;
   dow1ntext.textContent = forecastDays[3].detailedForecast;
   dow1nshort.textContent = forecastDays[3].shortForecast;
-  dow1ntemp.textContent = forecastDays[3].temperature;
+  dow1ntemp.textContent = forecastDays[3].temperature + `${degree}F`;
   d1nicon.src = forecastDays[3].icon;
 
   //2
   dow2.textContent = forecastDays[4].name;
   dow2text.textContent = forecastDays[4].detailedForecast;
   dow2short.textContent = forecastDays[4].shortForecast;
-  dow2temp.textContent = forecastDays[4].temperature;
+  dow2temp.textContent = forecastDays[4].temperature + `${degree}F`;
   d2icon.src = forecastDays[4].icon;
 
   dow2n.textContent = forecastDays[5].name;
   dow2ntext.textContent = forecastDays[5].detailedForecast;
   dow2nshort.textContent = forecastDays[5].shortForecast;
-  dow2ntemp.textContent = forecastDays[5].temperature;
+  dow2ntemp.textContent = forecastDays[5].temperature + `${degree}F`;
   d2nicon.src = forecastDays[5].icon;
 
   //3
   dow3.textContent = forecastDays[6].name;
   dow3text.textContent = forecastDays[6].detailedForecast;
   dow3short.textContent = forecastDays[6].shortForecast;
-  dow3temp.textContent = forecastDays[6].temperature;
+  dow3temp.textContent = forecastDays[6].temperature + `${degree}F`;
   d3icon.src = forecastDays[6].icon;
 
   dow3n.textContent = forecastDays[7].name;
   dow3ntext.textContent = forecastDays[7].detailedForecast;
   dow3nshort.textContent = forecastDays[7].shortForecast;
-  dow3ntemp.textContent = forecastDays[7].temperature;
+  dow3ntemp.textContent = forecastDays[7].temperature + `${degree}F`;
   d3nicon.src = forecastDays[7].icon;
 
   //4
   dow4.textContent = forecastDays[8].name;
   dow4text.textContent = forecastDays[8].detailedForecast;
   dow4short.textContent = forecastDays[8].shortForecast;
-  dow4temp.textContent = forecastDays[8].temperature;
+  dow4temp.textContent = forecastDays[8].temperature + `${degree}F`;
   d4icon.src = forecastDays[8].icon;
 
   dow4n.textContent = forecastDays[9].name;
   dow4ntext.textContent = forecastDays[9].detailedForecast;
   dow4nshort.textContent = forecastDays[9].shortForecast;
-  dow4ntemp.textContent = forecastDays[9].temperature;
+  dow4ntemp.textContent = forecastDays[9].temperature + `${degree}F`;
   d4nicon.src = forecastDays[9].icon;
 
   //5
   dow5.textContent = forecastDays[10].name;
   dow5text.textContent = forecastDays[10].detailedForecast;
   dow5short.textContent = forecastDays[10].shortForecast;
-  dow5temp.textContent = forecastDays[10].temperature;
+  dow5temp.textContent = forecastDays[10].temperature + `${degree}F`;
   d5icon.src = forecastDays[10].icon;
 
   dow5n.textContent = forecastDays[11].name;
   dow5ntext.textContent = forecastDays[11].detailedForecast;
   dow5nshort.textContent = forecastDays[11].shortForecast;
-  dow5ntemp.textContent = forecastDays[11].temperature;
+  dow5ntemp.textContent = forecastDays[11].temperature + `${degree}F`;
   d5nicon.src = forecastDays[11].icon;
 
 }
