@@ -4,12 +4,14 @@ import './modules/weatherPage.js';
 import './modules/geoAPI.js';
 import './modules/weatherAPI.js';
 import './modules/highlights.js';
+import './modules/changeDisplay.js';
 import './style.css';
 
 import { getCityCoords } from './modules/geoAPI';
 import { getWeatherData } from './modules/weatherAPI';
 import { createForecastPage } from './modules/weatherPage';
 // import { highlightThings } from './modules/highlights.js';
+import { changeLook } from './modules/changeDisplay.js';
 
 let coordinates = [];
 let forecastDays = [];
@@ -21,6 +23,7 @@ const form = document.forms['formID'];
 const weatherPageClass = document.querySelector('.weather-page');
 const errorArea = document.querySelector('.errors');
 const errorPage = document.querySelector('.errorPage');
+errorArea.style.display = "none";
 
 
 form.addEventListener('submit', function(e) {
@@ -43,21 +46,24 @@ form.addEventListener('submit', function(e) {
     .then( (days) => {
       [d0, d0n, d1, d1n, d2, d2n, d3, d3n, d4, d4n, d5, d5n] = days;
       forecastDays.push(d0, d0n, d1, d1n, d2, d2n, d3, d3n, d4, d4n, d5, d5n);
-      console.log(forecastDays);
+      // console.log(forecastDays);
       createForecastPage(forecastDays);
       // highlightThings(forecastDays);
+      changeLook(forecastDays);
       coordinates = [];
       forecastDays = [];
     })
     .catch( () => {
-      errorArea.textcontent = "Invalid City or State. Otherwise server is not working."
-    })
+      errorArea.style.display = "block";
+      errorArea.textcontent = "Invalid City or State. Otherwise server is not working.";
+      setTimeout(() => {errorArea.style.display = "none"}, 3000);
+    });
   })
   .catch( () => {
     errorArea.style.display = "block";
     errorArea.textContent = "Invalid City or State.";
     setTimeout(() => {errorArea.style.display = "none"}, 3000);
-  })
+  });
   
   
 })
