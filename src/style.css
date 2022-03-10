@@ -59,11 +59,11 @@ body{
     }
 
     .submitForm{
-      width: 50%;
+      width: 65%;
       border: 2px black solid;
       border-radius: 4px;
       padding: 1%;
-      font-size: 1em;
+      font-size: 1rem;
     }
 
     .submitForm:hover{
